@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*=======reset start=======*/
+html{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0; padding:0;}
+@media screen and (min-width: 640px){body{width: 6.4rem; margin: 0 auto;}}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+audio,canvas,video{display:inline-block; *display:inline; *zoom:1;}
+body,button,input,select,textarea{font:12px arial,sans-serif;}
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){a:active{background-color:transparent;}}
+small,cite,code,em,th,i,b{font-style:normal; font-weight:500;}
+input,select,textarea,button{ box-sizing:content-box;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0 none; padding:0;}
+textarea{overflow:auto; vertical-align:top;}
+table{border-collapse:collapse; border-spacing:0;}
+fieldset,img,iframe{border:0 none;}
+img{display:inline-block; vertical-align:bottom; -ms-interpolation-mode:bicubic;}
+iframe{display:block;}
+ul,ol{list-style:none;}
+li{vertical-align:top;}
+q:before,q:after{content:'';}
+a{text-decoration: none;}
+input[type="text"]{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+body{background-color: #f9f9f9;}
+/*=======清除浮动简洁版 start======*/
+.clearfix:before, .clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{
+    clear:both;
+    overflow:hidden;
+}
+.clearfix{
+    zoom:1;
+}
+
+/*=======定位 start======*/
+.rel{position: relative;}
+
+/*=======文字超出部分点点点 start======*/
+.ellipsis{     /*兼容opera*/
+    text-overflow: ellipsis;        /*这就是省略号喽*/
+    overflow: hidden;               /*设置超过的隐藏*/
+    white-space: nowrap;            /*设置不折行*/
+}

@@ -1,0 +1,138 @@
+@charset "UTF-8";
+// @import "variable";
+// @import "mixins";
+/**
+ *	@css初始化
+ *	----------
+ */
+*{margin:0;padding:0;}
+html, body {
+  font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif, "微软雅黑","Microsoft YaHei" ;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+body {
+  background-color: #fff;
+}
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0; padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block;}
+
+/** filedset组合表单中的相关元素 */
+fieldset, img, input, button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline-style: none;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif, "微软雅黑","Microsoft YaHei";
+}
+option {
+  font-family: PingFang SC;
+}
+
+select {
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  font-family: PingFang SC;
+}
+/** 清除列表风格 */
+ul, ol {
+  list-style: none;
+}
+textarea {
+  vertical-align: middle;
+  border: 1px solid #DDD;
+}
+/** 重置表单样式 */
+select, input, textarea {
+  font-size: 14px;
+  margin: 0;
+  outline: none;
+}
+input[type=checkbox] {
+  width: auto!important;
+  height: auto!important;
+}
+/*去除inout number默认样式*/
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+textarea {
+  resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+  border-collapse: collapse;			/*合并外边线*/
+}
+
+/*
+* 清除浮动
+*/ 
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /*IE/7/6*/
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+s, i, em {
+  font-style: normal;
+  text-decoration: none;
+}
+button {
+  font-family: PingFang SC;
+}
+button[disabled] {
+  background-color: #ddd;
+  color: #333;
+}
+button[disabled]:hover {
+  background-color: #ddd;
+  color: #333;
+}
+::-moz-selection{
+  background-color: #1D6CAC;
+  color: #fff;
+}
+::selection{
+  background-color: #1D6CAC;
+  color: #fff;
+}
+
+/*=======文字超出部分点点点 start======*/
+.ellipsis{
+    -o-text-overflow: ellipsis;     /*兼容opera*/
+    text-overflow: ellipsis;        /*这就是省略号喽*/
+    overflow: hidden;               /*设置超过的隐藏*/
+    white-space: nowrap;            /*设置不折行*/
+}

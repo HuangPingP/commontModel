@@ -1,0 +1,97 @@
+.black{
+  color: #1f2d3d;
+}
+.gray{
+  color: #99A9BF;
+}
+.highText{
+  color:red;
+}
+
+.fs16{
+  font-size: 16px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+// 内容区块阴影
+.content-shadow{
+  padding: 10px 14px;
+  background: #FFFFFF;
+  border: 1px solid #D3DCE6;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+  border-radius: 2px;
+}
+.clickable{
+  cursor: pointer;
+}
+// 去数字输入框控制按钮
+.hide-ctr-numinput input::-webkit-outer-spin-button,
+.hide-ctr-numinput input::-webkit-inner-spin-button{
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+.u-info-gray {
+  color: rgba(94,109,130,1);
+  font-size: 14px;
+}
+.el-table__row .cell p{
+  line-height: 1.2 !important;
+}
+/* 运营系统表单项样式 */
+.cms-form-item{
+  display: inline-block !important;
+  width: 520px !important;
+  margin-right: 14px;
+}
+/*父元素盒布局*/
+.hbox,.vbox{
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+}
+.hbox{
+    -webkit-box-orient: horizontal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+}
+.vbox{
+    -webkit-box-orient: vertical !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+/*子元素水平和垂直方向居中*/
+.xcenter,.ycenter{
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+}
+.xcenter{
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.ycenter{
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.flexFull{
+	-webkit-box-flex: 1;
+	-webkit-flex:1;
+	-ms-flex: 1 0 0px;
+	flex: 1 0 0px;
+}
+/*子元素两端对齐*/
+.flex-between{
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	-webkit-box-pack:justify;
+	-webkit-justify-content:space-between;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+}
