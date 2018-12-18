@@ -15,7 +15,10 @@
   #移动端默认样式
 ├─style.less 
   #统一样式设计
+├─reset.scss 
+  #基础样式重置
 ├─weixin.js
   #调用微信接口设计
-
+├─common.js
+  #公用js
 ```
