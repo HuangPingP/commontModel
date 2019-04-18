@@ -1,0 +1,76 @@
+/*分页 start*/
+
+.page{
+	float: right;
+	font-size: 12px;
+}
+.page li{
+	display: inline-block;
+	background: #fff;
+	margin-right: 5px; 
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.page li a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #ddd;
+	line-height: 30px;
+	text-align: center;
+}
+.page li.on a{
+	background: #fc4f08;
+	border: 1px solid #fc4f08;
+}
+.page li.on a{
+	color: #fff;
+}
+.page .p-number a:hover, .page .toSomePage:hover{
+	background-color: #fc4f08;
+	border: 1px solid #fc4f08;
+	color: #fff;
+}
+.page .arrowleft-gray{
+	display: block;
+	background: url(images/arrowleft_gray.png) no-repeat center center;
+	background-size: 7px;
+}
+.page .arrowright-gray{
+	display: block;
+	background: url(images/arrowright_gray.png) no-repeat center center;
+	background-size: 7px;
+}
+.page .arrowleft-gray:hover{
+	display: block;
+	background: url(images/arrowleft_white.png) no-repeat center center;
+	background-size: 7px;
+	background-color: #fc4f08;
+	border: 1px solid #fc4f08;
+}
+.page .arrowright-gray:hover{
+	display: block;
+	background: url(images/arrowright_white.png) no-repeat center center;
+	background-size: 7px;
+	background-color: #fc4f08;
+	border: 1px solid #fc4f08;
+}
+.inputLi{
+	margin-left: 18px;
+}
+.inputLi .page-input{
+	width: 31px;
+	height: 31px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+    border: 1px solid #d5d5d5;
+}
+.page .toPageLi, .page .toPageLi a{
+	width: 44px;
+}
+
+
+/*分页 end*/

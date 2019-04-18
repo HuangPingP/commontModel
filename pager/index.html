@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="pager.css">
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="pagerO.js"></script>
+</head>
+<body>
+<div id="pagerId"></div>
+<script type="text/javascript">
+
+    pager.getPage({
+        "id": "pagerId", 	//外层div的id
+        "page" : 1,			//当前页
+        "totalPage" : "6",	//总页数
+        "preBtnClick": function(){},//上一页点击事件
+        "nextBtnClick": function(){},//下一页点击事件
+        "toSomePageClick": function(){},//跳转到某一页点击事件
+        "isShowAll": false //true：显示所有页数，false：显示...
+    });
+</script>
+</body>
+</html>
